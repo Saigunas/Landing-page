@@ -4,19 +4,20 @@ body {
     background-color: #1F2937;
     font-family: 'Roboto', sans-serif;
     color: #F9FAF8;
+    font-size: 22px;
 }
 
 .header {
     display: flex;
     margin: 0px;
-    padding: 10px 100px;
+    padding: 30px 15%;
     justify-content: space-between;
 }
 
 .logo {
-    font-size: 24px;
+    
+    font-size: clamp(10px, 3vw, 35px);
     font-weight: bold;
-    color: #F9FAF8;
 }
 
 ul {
@@ -24,8 +25,8 @@ ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    gap: 15px;
-    font-size: 16px;
+    gap: 20px;
+    font-size: clamp(5px, 2vw, 22px);
 }
 
 a {
@@ -41,42 +42,79 @@ p {
 .hero {
     display: flex;
     justify-content: space-between;
-    padding: 100px 100px;
+    padding: 100px 15%;
     margin: 0px;
-    gap: 35px;
 }
 
 .heroImg {
-    width: 400px;
-    flex-shrink: 0;
+    margin-left: 4%;
+    flex-basis: 100%;
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    min-width: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
 
 .heroText {
-    font-size: 45px;
+    font-size: 60px;
     font-weight: bolder;
+    white-space: nowrap;
+    font-size: clamp(20px, 6vw, 60px);
 }
 
 .heroSubtext {
-    font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #E5E7EB;
+    font-size: clamp(5px, 2vw, 22px);
 }
 
 button {
     background-color: #3882F6; /* Green */
     border: none;
-    padding: 7px 30px;
+    padding: 7px 35px;
     color: #F9FAF8;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bold;
     border-radius: 8px;
 }
   
 button:hover {
     transition-duration: 0.2s;
-    font-size: 20px;
+    font-size: 30px;
     background-color: #316fd3;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.webInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 100px;
+    background-color: #F9FAF8;
+}
+
+.webInfo > p {
+    color: #1F2937;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.infoBoxes {
+    display: flex;
+    color: #1F2937;
+}
+
+.infoBoxes img {
+    justify-content: center;
+}
+
+.infoBoxes p {
+    text-align: center;
 }
