@@ -72,7 +72,7 @@ p {
 }
 
 button {
-    background-color: #3882F6; /* Green */
+    background-color: #3882F6;
     border: none;
     padding: 7px 35px;
     color: #F9FAF8;
@@ -150,4 +150,33 @@ button:hover {
     font-weight: 600;
     text-align: right;
     color: #1F2937;
+}
+
+.actionBlock {
+    background-color: #F9FAF8;
+    margin: 0;
+    padding: 90px 0;
+}
+
+.actionBlock .box {
+    background-color: #3882F6;
+    margin: 0 14%;
+    border-radius: 8px;
+    display: flex;
+    padding: 70px 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actionBlock .callText {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.actionBlock .explainText {
+    font-size: 22px;
+}
+
+.actionBlock button {
+    border: 2px solid #F9FAF8;
 }
